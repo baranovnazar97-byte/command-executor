@@ -1,9 +1,18 @@
 import { PromptService } from './core/prompt/prompt.service';
+import { ConsoleLogger } from './out/consoleLogger/console-logger';
 
 export class App {
   async run() {
-    const result = await new PromptService().input<number>('Number', 'number');
-    console.log(result);
+    try {
+      const result = await new PromptService().input<number>(
+        'Number',
+        'number',
+      );
+
+      ConsoleLogger.getInstance().log('Success', result);
+    } catch (error) {
+      ConsoleLogger.getInstance().error(String(error));
+    }
   }
 }
 
