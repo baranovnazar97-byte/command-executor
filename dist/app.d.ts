@@ -1,4 +1,4 @@
 export declare class App {
-    run(): void;
+    run(): Promise<void>;
 }
 //# sourceMappingURL=app.d.ts.map
