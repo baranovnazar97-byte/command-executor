@@ -11,7 +11,7 @@
     "url": "git+https://github.com/baranovnazar97-byte/command-executor.git"
   },
   "license": "ISC",
-  "author": "Nazar",
+  "author": "Nazar Baranov",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,7 @@
     "inquirer": "^14.0.2"
   },
   "devDependencies": {
-    "@types/inquirer": "^9.0.10"
+    "@types/inquirer": "^9.0.10",
+    "@types/node": "^26.1.2"
   }
 }
