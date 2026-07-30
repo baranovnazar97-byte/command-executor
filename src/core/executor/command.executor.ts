@@ -16,7 +16,7 @@ export abstract class CommandExecutor<T> {
   protected abstract processStream(
     stream: ChildProcessWithoutNullStreams,
     logger: IStreamLogger,
-  ): Promise<void>;
+  ): void;
 
   public async execute() {
     const res = await this.prompt();
