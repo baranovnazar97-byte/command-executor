@@ -2,8 +2,8 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-    // "rootDir": "./src",
-    // "outDir": "./dist",
+    "outDir": "./dist",
+    "rootDir": "./src",
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
@@ -19,11 +19,10 @@
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
 
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
+    "strictPropertyInitialization": false,
     "exactOptionalPropertyTypes": true,
 
     // Style Options
